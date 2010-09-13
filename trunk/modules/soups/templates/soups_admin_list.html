@@ -1,0 +1,16 @@
+<div style="border:dotted; height: 1.5em; clear:both; margin-bottom:8px; padding-top: 3px; padding-bottom: 3px; padding-right: 4px; font-size:9px;">
+		<div style="float:left; border-right: dotted; padding-left:4px; padding-right:4px;"><{$smarty.const._SUP_TEMPLATE_ADMIN_SOUP_ALLSUBMISSION}>&nbsp;<{$molecularSubmissions.url}></div>
+		<div style="float:left; border-right: dotted; padding-left:4px; padding-right:4px;"><{$smarty.const._SUP_TEMPLATE_ADMIN_SOUP_7DAYSSUBMISSION}>&nbsp;<{$sevendaySubmissions.url}></div>
+		<div style="float:left; border-right: dotted; padding-left:4px; padding-right:4px;"><{$smarty.const._SUP_TEMPLATE_ADMIN_SOUP_14DAYSUBMISSION}>&nbsp;<{$forteendaySubmissions.url}></div>
+</div>
+<div style="clear:both; height:0.8em;">&nbsp;</div>
+<{foreach item=soup from=$soups}>
+<div style="clear:both; padding-bottom:9px;">
+	<div style="border-right:dotted; border-left:dotted; padding-right:12px; padding-left:12px;">
+    	<div style="clear:both;"><strong><{$smarty.const._SUP_TEMPLATE_ADMIN_SOUP_ALIAS}></strong>&nbsp;<a href="<{$xoops_url}>/modules/soups/admin/index.php?op=info&id=<{$soup.id}>"><{$soup.alias}></a></div>
+        <div style="clear:both;"><strong><{$smarty.const._SUP_TEMPLATE_ADMIN_SOUP_PERIODICALBASE}></strong>&nbsp;<a href="<{$xoops_url}>/modules/soups/admin/index.php?op=info&id=<{$soup.id}>"><{$soup.periodicalbase}></a></div>
+        <div style="clear:both;"><strong><{$smarty.const._SUP_TEMPLATE_ADMIN_SOUP_DEFINEDBY}></strong>&nbsp;<{$soup.user}></div>
+        <div style="clear:both;"><strong><{$smarty.const._SUP_TEMPLATE_ADMIN_SOUP_CREATED}></strong>&nbsp;<{$soup.made}></div>
+    </div>
+</div>
+<{/foreach}>

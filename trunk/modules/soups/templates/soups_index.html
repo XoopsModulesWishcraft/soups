@@ -1,0 +1,14 @@
+<div style="display:block; clear:both;"><{$smarty.const._SUP_TEMPLATE_INDEX_INTRODUCTION}>
+<{if !$xoops_isuser}>
+<{$smarty.const._SUP_TEMPLATE_INDEX_ONLYGUEST}>
+<{/if}>
+<h1><{$smarty.const._SUP_TEMPLATE_INDEX_H1}></h1>
+<ul>
+    <li><{$smarty.const._SUP_TEMPLATE_INDEX_POINTA}></li>
+    <li><{$smarty.const._SUP_TEMPLATE_INDEX_POINTB}> <strong><{$xoconfig.score}></strong></li>
+    <li><{$smarty.const._SUP_TEMPLATE_INDEX_POINTC}> <strong>$ <{$xoconfig.paypalAmount}></strong></li>
+    <li><{$smarty.const._SUP_TEMPLATE_INDEX_POINTD}></li>
+</ul>
+</div>
+<div style="clear:both; height:2em;">&nbsp;</div>
+<div style="display:block; clear:both;"><{$form.modeller}></div>
